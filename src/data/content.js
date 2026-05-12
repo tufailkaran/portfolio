@@ -4,7 +4,7 @@ export const projects = [
     description:
       'Optimized Magento admin sales order view using AJAX-based tab loading and button-wise rendering for comments, labels, timelines, and related order sections to improve admin performance.',
     tech: ['Magento 2', 'AJAX', 'Admin Optimization', 'UI Components'],
-    image: '/order-opt.png',
+    image: 'order-opt.png',
     icon: '⚙️'
   },
   {
@@ -12,7 +12,7 @@ export const projects = [
     description:
       'Advanced Magento deals engine with percentage and fixed discounts, live preview, widgets, carousels, countdown timers, restriction rules, and multi-product assignment.',
     tech: ['Magento 2', 'Widgets', 'Countdown', 'Promotions'],
-    image: '/deals-sys.png',
+    image: 'deals-sys.png',
     icon: '🔥'
   },
   {
@@ -20,7 +20,7 @@ export const projects = [
     description:
       'Automated warehouse management and ERP workflows including order processing, dispatch management, and stock synchronization.',
     tech: ['ERP', 'Warehouse Systems', 'Magento'],
-    image: '/warehouse.png',
+    image: 'warehouse.png',
     icon: '🏭'
   },
   {
@@ -246,6 +246,6 @@ export const contactInfo = {
   email: 'tufailkaran434@gmail.com',
   phone: '+92 317 9942601',
   linkedin: 'https://www.linkedin.com/in/tufailkaran/',
-  resume: '/Muhammad Tufail Resume.pdf',
+  resume: 'Muhammad Tufail Resume.pdf',
   location: 'Rawalpindi, Pakistan'
 };

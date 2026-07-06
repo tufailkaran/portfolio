@@ -1,16 +1,40 @@
-# React + Vite
+# Muhammad Tufail — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio of Muhammad Tufail, Senior Magento / Adobe Commerce Developer.
 
-Currently, two official plugins are available:
+**Live:** https://tufailkaran.github.io/portfolio/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Stack
 
-## React Compiler
+- React 19 + Vite
+- Framer Motion for animations
+- Plain CSS with design tokens (no UI framework)
+- Deployed to GitHub Pages via `gh-pages`
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Sections
 
-## Expanding the ESLint configuration
+- **Hero** — intro with a developer profile code card
+- **Stats** — experience at a glance
+- **Services** — specialized offerings
+- **Projects** — 20 enterprise case studies with category filters (Magento, Warehouse & Logistics, Full Stack, WordPress)
+- **Experience** — career timeline, education, and certifications
+- **Skills** — grouped technical proficiency
+- **Contact** — direct channels and resume download
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Development
+
+```bash
+npm install
+npm run dev      # local dev server
+npm run build    # production build to dist/
+npm run lint     # eslint
+npm run deploy   # publish dist/ to GitHub Pages
+```
+
+## Content
+
+All portfolio content (projects, skills, experience, services, contact info) lives in
+`src/data/content.js` — edit that single file to update the site.
+
+Project cover images live in `public/covers/` (generated SVGs) alongside real
+screenshots in `public/`.

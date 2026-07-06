@@ -19,12 +19,41 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--bg-color);
   color: var(--text-primary);
   font-family: var(--font-main);
   line-height: 1.6;
   overflow-x: hidden;
+}
+
+::selection {
+  background: rgba(34, 211, 238, 0.3);
+  color: #fff;
+}
+
+:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 ::-webkit-scrollbar {
@@ -71,6 +100,15 @@ body {
   display: block;
 }
 
+.section-intro {
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  max-width: 620px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
 .glass-card {
   background: var(--glass-bg);
   backdrop-filter: blur(12px);
@@ -86,6 +124,7 @@ body {
 }
 
 .btn-primary {
+  display: inline-block;
   padding: 1rem 2rem;
   border-radius: 1rem;
   background: var(--primary-color);
@@ -95,6 +134,8 @@ body {
   cursor: pointer;
   transition: var(--transition-smooth);
   font-size: 1rem;
+  font-family: var(--font-main);
+  text-decoration: none;
 }
 
 .btn-primary:hover {
@@ -103,6 +144,7 @@ body {
 }
 
 .btn-secondary {
+  display: inline-block;
   padding: 1rem 2rem;
   border-radius: 1rem;
   background: transparent;
@@ -112,6 +154,8 @@ body {
   cursor: pointer;
   transition: var(--transition-smooth);
   font-size: 1rem;
+  font-family: var(--font-main);
+  text-decoration: none;
 }
 
 .btn-secondary:hover {

@@ -1,9 +1,8 @@
 .hero {
   position: relative;
-  min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 10rem 0 6rem;
+  padding: 9rem 0 3rem;
   overflow: hidden;
   background: url('../../assets/hero-bg.png') no-repeat center center/cover;
 }
@@ -78,7 +77,7 @@
   font-size: clamp(3rem, 8vw, 5.5rem);
   font-weight: 900;
   line-height: 1.1;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   letter-spacing: -0.02em;
 }
 
@@ -93,7 +92,7 @@
   font-size: 1.25rem;
   color: var(--text-secondary);
   max-width: 600px;
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
   line-height: 1.8;
 }
 
@@ -104,7 +103,7 @@
 .hero-actions {
   display: flex;
   gap: 1.5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2.5rem;
   flex-wrap: wrap;
 }
 
@@ -134,6 +133,6 @@
 
 @media (max-width: 1024px) {
   .hero {
-    padding: 8rem 0 5rem;
+    padding: 7rem 0 3rem;
   }
 }

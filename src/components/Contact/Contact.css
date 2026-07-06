@@ -55,10 +55,6 @@ a.channel-card:hover {
   background: rgba(34, 211, 238, 0.06);
 }
 
-.channel-static {
-  cursor: default;
-}
-
 .channel-icon {
   font-size: 1.6rem;
   margin-bottom: 0.25rem;

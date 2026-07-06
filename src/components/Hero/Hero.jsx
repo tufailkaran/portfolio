@@ -23,9 +23,9 @@ const Hero = () => {
           </h1>
 
           <p className="hero-description">
-            Enterprise-level engineer specializing in <strong>Adobe Commerce</strong>,
+            Software engineer specializing in <strong>Adobe Commerce</strong>,
             warehouse automation, and scalable ecosystem engineering — currently building
-            for Tile Mountain (UK). Based in {contactInfo.location}.
+            for Tile Mountain (UK).
           </p>
 
           <div className="hero-actions">
@@ -61,25 +61,18 @@ const Hero = () => {
             </div>
             <pre className="code-card-body">
               <code>
-                <span className="tok-kw">const</span> <span className="tok-var">engineer</span> = {'{'}{'\n'}
+                <span className="tok-kw">const</span> <span className="tok-var">tufail</span> = {'{'}{'\n'}
                 {'  '}<span className="tok-key">name</span>: <span className="tok-str">'Muhammad Tufail'</span>,{'\n'}
-                {'  '}<span className="tok-key">role</span>: <span className="tok-str">'Magento Developer · SWE-II'</span>,{'\n'}
+                {'  '}<span className="tok-key">role</span>: <span className="tok-str">'Magento Dev · SWE-II'</span>,{'\n'}
                 {'  '}<span className="tok-key">company</span>: <span className="tok-str">'Tile Mountain (UK)'</span>,{'\n'}
-                {'  '}<span className="tok-key">core</span>: [<span className="tok-str">'Adobe Commerce'</span>, <span className="tok-str">'PHP'</span>, <span className="tok-str">'Laravel'</span>],{'\n'}
-                {'  '}<span className="tok-key">stack</span>: [<span className="tok-str">'React'</span>, <span className="tok-str">'Node.js'</span>, <span className="tok-str">'GraphQL'</span>],{'\n'}
-                {'  '}<span className="tok-key">focus</span>: <span className="tok-str">'Warehouse Automation & ERP'</span>,{'\n'}
-                {'  '}<span className="tok-key">experience</span>: <span className="tok-num">'6+ years'</span>,{'\n'}
+                {'  '}<span className="tok-key">core</span>: [<span className="tok-str">'Adobe Commerce'</span>, <span className="tok-str">'PHP'</span>],{'\n'}
+                {'  '}<span className="tok-key">stack</span>: [<span className="tok-str">'Laravel'</span>, <span className="tok-str">'React'</span>, <span className="tok-str">'Node'</span>],{'\n'}
+                {'  '}<span className="tok-key">focus</span>: <span className="tok-str">'Warehouse Automation'</span>,{'\n'}
+                {'  '}<span className="tok-key">experience</span>: <span className="tok-str">'6+ years'</span>,{'\n'}
                 {'  '}<span className="tok-key">available</span>: <span className="tok-bool">true</span>{'\n'}
                 {'}'};
               </code>
             </pre>
-            <div className="code-card-footer">
-              <div className="avatar-mini">MT</div>
-              <div className="caption-text">
-                <h3>Enterprise Architect</h3>
-                <p>Magento · Laravel · PHP · WordPress · React · APIs</p>
-              </div>
-            </div>
           </div>
         </motion.div>
       </div>

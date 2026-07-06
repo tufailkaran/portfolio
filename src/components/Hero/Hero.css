@@ -175,39 +175,6 @@
 .tok-num { color: #fbbf24; }
 .tok-bool { color: #fb923c; }
 
-.code-card-footer {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 1.25rem 1.5rem;
-  border-top: 1px solid var(--glass-border);
-  background: rgba(255, 255, 255, 0.02);
-}
-
-.avatar-mini {
-  width: 3rem;
-  height: 3rem;
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-  color: #020617;
-  border-radius: 0.9rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 900;
-  font-size: 1.1rem;
-  flex-shrink: 0;
-}
-
-.caption-text h3 {
-  font-size: 1.05rem;
-  font-weight: 700;
-}
-
-.caption-text p {
-  font-size: 0.8125rem;
-  color: var(--text-secondary);
-}
-
 @media (max-width: 1024px) {
   .hero {
     padding: 8rem 0 5rem;

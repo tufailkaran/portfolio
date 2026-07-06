@@ -425,6 +425,5 @@ export const contactInfo = {
   phone: '+92 317 9942601',
   linkedin: 'https://www.linkedin.com/in/tufailkaran/',
   github: 'https://github.com/tufailkaran',
-  resume: 'Muhammad Tufail Resume.pdf',
-  location: 'Rawalpindi, Pakistan'
+  resume: 'Muhammad Tufail Resume.pdf'
 };

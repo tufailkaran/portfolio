@@ -21,11 +21,6 @@ const channels = [
     value: 'in/tufailkaran',
     href: contactInfo.linkedin,
     external: true
-  },
-  {
-    icon: '📍',
-    label: 'Location',
-    value: `${contactInfo.location} · Remote-friendly`
   }
 ];
 
@@ -50,26 +45,18 @@ const Contact = () => {
           </p>
 
           <div className="contact-channels">
-            {channels.map((channel) =>
-              channel.href ? (
-                <a
-                  key={channel.label}
-                  href={channel.href}
-                  className="channel-card"
-                  {...(channel.external ? { target: '_blank', rel: 'noreferrer' } : {})}
-                >
-                  <span className="channel-icon" aria-hidden="true">{channel.icon}</span>
-                  <span className="channel-label">{channel.label}</span>
-                  <span className="channel-value">{channel.value}</span>
-                </a>
-              ) : (
-                <div key={channel.label} className="channel-card channel-static">
-                  <span className="channel-icon" aria-hidden="true">{channel.icon}</span>
-                  <span className="channel-label">{channel.label}</span>
-                  <span className="channel-value">{channel.value}</span>
-                </div>
-              )
-            )}
+            {channels.map((channel) => (
+              <a
+                key={channel.label}
+                href={channel.href}
+                className="channel-card"
+                {...(channel.external ? { target: '_blank', rel: 'noreferrer' } : {})}
+              >
+                <span className="channel-icon" aria-hidden="true">{channel.icon}</span>
+                <span className="channel-label">{channel.label}</span>
+                <span className="channel-value">{channel.value}</span>
+              </a>
+            ))}
           </div>
 
           <div className="contact-actions">

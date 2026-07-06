@@ -3,7 +3,7 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 8rem 0;
+  padding: 10rem 0 6rem;
   overflow: hidden;
   background: url('../../assets/hero-bg.png') no-repeat center center/cover;
 }
@@ -12,7 +12,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, rgba(2, 6, 23, 0.9), rgba(2, 6, 23, 0.7) 50%, rgba(2, 6, 23, 0.9));
+  background: linear-gradient(to bottom, rgba(2, 6, 23, 0.92), rgba(2, 6, 23, 0.75) 50%, rgba(2, 6, 23, 0.95));
   z-index: 1;
 }
 
@@ -31,7 +31,7 @@
   position: relative;
   z-index: 10;
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-columns: 1.15fr 0.85fr;
   gap: 4rem;
   align-items: center;
 }
@@ -50,8 +50,22 @@
   margin-bottom: 2rem;
 }
 
+.badge-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: #34d399;
+  box-shadow: 0 0 8px rgba(52, 211, 153, 0.8);
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
 .hero-title {
-  font-size: clamp(3.5rem, 8vw, 6rem);
+  font-size: clamp(3rem, 8vw, 5.5rem);
   font-weight: 900;
   line-height: 1.1;
   margin-bottom: 2rem;
@@ -73,10 +87,15 @@
   line-height: 1.8;
 }
 
+.hero-description strong {
+  color: var(--text-primary);
+}
+
 .hero-actions {
   display: flex;
   gap: 1.5rem;
   margin-bottom: 3rem;
+  flex-wrap: wrap;
 }
 
 .hero-socials {
@@ -103,86 +122,122 @@
   background: rgba(255, 255, 255, 0.05);
 }
 
-.hero-image-container {
+/* Code card visual */
+.hero-visual {
   position: relative;
 }
 
-.image-wrapper {
-  position: relative;
-  border-radius: 3rem;
+.code-card {
   overflow: hidden;
-  height: 650px;
+  border-radius: 1.5rem;
 }
 
-.hero-image {
-  width: 100%;
-  height: 100%;
-  object-cover: cover;
-  transition: transform 1s ease;
+.code-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 1rem 1.5rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-bottom: 1px solid var(--glass-border);
 }
 
-.image-wrapper:hover .hero-image {
-  transform: scale(1.05);
+.window-dot {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
 }
 
-.image-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to top, var(--bg-color), transparent 50%);
+.dot-red { background: #f87171; }
+.dot-yellow { background: #fbbf24; }
+.dot-green { background: #34d399; }
+
+.code-card-title {
+  margin-left: 0.75rem;
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+  font-family: 'Consolas', 'Monaco', monospace;
 }
 
-.image-caption {
-  position: absolute;
-  bottom: 2rem;
-  left: 2rem;
-  right: 2rem;
+.code-card-body {
+  padding: 1.75rem 1.5rem;
+  margin: 0;
+  font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+  font-size: 0.875rem;
+  line-height: 1.9;
+  overflow-x: auto;
+  color: #cbd5e1;
+}
+
+.tok-kw { color: #c084fc; }
+.tok-var { color: #7dd3fc; }
+.tok-key { color: #22d3ee; }
+.tok-str { color: #86efac; }
+.tok-num { color: #fbbf24; }
+.tok-bool { color: #fb923c; }
+
+.code-card-footer {
   display: flex;
   align-items: center;
   gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  border-top: 1px solid var(--glass-border);
+  background: rgba(255, 255, 255, 0.02);
 }
 
 .avatar-mini {
-  width: 3.5rem;
-  height: 3.5rem;
-  background: var(--primary-color);
-  color: #000;
-  border-radius: 1rem;
+  width: 3rem;
+  height: 3rem;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: #020617;
+  border-radius: 0.9rem;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 900;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
+  flex-shrink: 0;
 }
 
 .caption-text h3 {
-  font-size: 1.25rem;
+  font-size: 1.05rem;
   font-weight: 700;
 }
 
 .caption-text p {
-  font-size: 0.875rem;
+  font-size: 0.8125rem;
   color: var(--text-secondary);
 }
 
 @media (max-width: 1024px) {
+  .hero {
+    padding: 8rem 0 5rem;
+  }
+
   .hero-content {
     grid-template-columns: 1fr;
     text-align: center;
     gap: 3rem;
   }
-  
+
   .hero-description {
     margin-left: auto;
     margin-right: auto;
   }
-  
+
   .hero-actions, .hero-socials {
     justify-content: center;
   }
-  
-  .image-wrapper {
-    height: 500px;
-    max-width: 500px;
+
+  .code-card {
+    max-width: 540px;
     margin: 0 auto;
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .code-card-body {
+    font-size: 0.75rem;
+    padding: 1.25rem 1rem;
   }
 }

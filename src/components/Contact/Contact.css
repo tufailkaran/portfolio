@@ -1,0 +1,101 @@
+.contact-section {
+  padding: 8rem 0 4rem;
+  scroll-margin-top: 5rem;
+}
+
+.contact-cta {
+  padding: 4rem 3rem;
+  text-align: center;
+  max-width: 1000px;
+  margin: 4rem auto 0;
+  background: linear-gradient(135deg, rgba(34, 211, 238, 0.05) 0%, rgba(59, 130, 246, 0.05) 100%);
+}
+
+.cta-title {
+  font-size: 2.4rem;
+  font-weight: 900;
+  margin-bottom: 1.25rem;
+  background: linear-gradient(to right, #fff, var(--text-secondary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cta-text {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  max-width: 640px;
+  margin: 0 auto 3rem;
+  line-height: 1.8;
+}
+
+.contact-channels {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.25rem;
+  margin-bottom: 3rem;
+}
+
+.channel-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 1.5rem 1rem;
+  border-radius: 1.25rem;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  text-decoration: none;
+  color: var(--text-primary);
+  transition: var(--transition-smooth);
+}
+
+a.channel-card:hover {
+  border-color: var(--primary-color);
+  transform: translateY(-3px);
+  background: rgba(34, 211, 238, 0.06);
+}
+
+.channel-static {
+  cursor: default;
+}
+
+.channel-icon {
+  font-size: 1.6rem;
+  margin-bottom: 0.25rem;
+}
+
+.channel-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--primary-color);
+}
+
+.channel-value {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  word-break: break-word;
+}
+
+.contact-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.contact-actions a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .contact-cta {
+    padding: 3rem 1.5rem;
+  }
+
+  .cta-title {
+    font-size: 1.8rem;
+  }
+}

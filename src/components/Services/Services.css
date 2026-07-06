@@ -22,22 +22,19 @@
   width: 4.5rem;
   height: 4.5rem;
   border-radius: 1.25rem;
-  background: rgba(34, 211, 238, 0.1);
+  background: rgba(139, 92, 246, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 2rem;
-  border: 1px solid rgba(34, 211, 238, 0.2);
+  border: 1px solid rgba(139, 92, 246, 0.2);
   transition: var(--transition-smooth);
 }
 
 .service-card:hover .service-icon-box {
-  background: var(--primary-color);
+  background: rgba(139, 92, 246, 0.25);
+  border-color: var(--primary-color);
   transform: rotate(5deg);
-}
-
-.service-card:hover .service-icon {
-  filter: brightness(0);
 }
 
 .service-icon {

@@ -35,8 +35,8 @@
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 0.75rem;
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-  color: #020617;
+  background: var(--accent-gradient);
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -77,8 +77,8 @@
   margin-left: 0.75rem;
   padding: 0.6rem 1.4rem;
   border-radius: 0.75rem;
-  background: var(--primary-color);
-  color: #020617;
+  background: var(--accent-gradient);
+  color: #fff;
   font-weight: 700;
   font-size: 0.9375rem;
   text-decoration: none;

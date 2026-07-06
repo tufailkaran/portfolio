@@ -1,6 +1,6 @@
 .skills-section {
   padding: 8rem 0;
-  background: radial-gradient(circle at center, rgba(59, 130, 246, 0.05), transparent 70%);
+  background: radial-gradient(circle at center, rgba(236, 72, 153, 0.05), transparent 70%);
   scroll-margin-top: 5rem;
 }
 
@@ -30,8 +30,8 @@
   width: 3rem;
   height: 3rem;
   border-radius: 1rem;
-  background: rgba(34, 211, 238, 0.1);
-  border: 1px solid rgba(34, 211, 238, 0.2);
+  background: rgba(139, 92, 246, 0.1);
+  border: 1px solid rgba(139, 92, 246, 0.2);
   font-size: 1.4rem;
 }
 
@@ -59,8 +59,8 @@
 }
 
 .skill-badge:hover {
-  background: rgba(34, 211, 238, 0.1);
-  border-color: rgba(34, 211, 238, 0.4);
+  background: rgba(139, 92, 246, 0.1);
+  border-color: rgba(139, 92, 246, 0.4);
   color: var(--primary-color);
 }
 

@@ -2,13 +2,14 @@
 
 :root {
   --bg-color: #020617;
-  --primary-color: #22d3ee;
-  --secondary-color: #3b82f6;
+  --primary-color: #a78bfa;
+  --secondary-color: #f472b6;
+  --accent-gradient: linear-gradient(135deg, #8b5cf6 0%, #d946ef 55%, #ec4899 100%);
   --text-primary: #ffffff;
-  --text-secondary: #94a3b8;
+  --text-secondary: #9ca3b8;
   --glass-bg: rgba(255, 255, 255, 0.03);
   --glass-border: rgba(255, 255, 255, 0.1);
-  --accent-glow: rgba(34, 211, 238, 0.2);
+  --accent-glow: rgba(139, 92, 246, 0.3);
   --font-main: 'Outfit', sans-serif;
   --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -32,7 +33,7 @@ body {
 }
 
 ::selection {
-  background: rgba(34, 211, 238, 0.3);
+  background: rgba(139, 92, 246, 0.3);
   color: #fff;
 }
 
@@ -119,7 +120,7 @@ body {
 }
 
 .glass-card:hover {
-  border-color: rgba(34, 211, 238, 0.4);
+  border-color: rgba(139, 92, 246, 0.4);
   transform: translateY(-5px);
 }
 
@@ -127,8 +128,8 @@ body {
   display: inline-block;
   padding: 1rem 2rem;
   border-radius: 1rem;
-  background: var(--primary-color);
-  color: #000;
+  background: var(--accent-gradient);
+  color: #fff;
   font-weight: 700;
   border: none;
   cursor: pointer;

@@ -9,7 +9,7 @@ const Services = () => {
         <span className="section-subtitle">What I Do</span>
         <h2 className="section-title">Specialized Solutions</h2>
         <p className="section-intro">
-          From enterprise Magento builds to warehouse automation — end-to-end
+          From Magento builds to warehouse automation — end-to-end
           engineering for commerce operations.
         </p>
 

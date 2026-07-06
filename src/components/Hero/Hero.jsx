@@ -45,36 +45,6 @@ const Hero = () => {
             </a>
           </div>
         </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="hero-visual"
-        >
-          <div className="code-card glass-card" aria-hidden="true">
-            <div className="code-card-header">
-              <span className="window-dot dot-red" />
-              <span className="window-dot dot-yellow" />
-              <span className="window-dot dot-green" />
-              <span className="code-card-title">tufail.config.js</span>
-            </div>
-            <pre className="code-card-body">
-              <code>
-                <span className="tok-kw">const</span> <span className="tok-var">tufail</span> = {'{'}{'\n'}
-                {'  '}<span className="tok-key">name</span>: <span className="tok-str">'Muhammad Tufail'</span>,{'\n'}
-                {'  '}<span className="tok-key">role</span>: <span className="tok-str">'Magento Dev · SWE-II'</span>,{'\n'}
-                {'  '}<span className="tok-key">company</span>: <span className="tok-str">'Tile Mountain (UK)'</span>,{'\n'}
-                {'  '}<span className="tok-key">core</span>: [<span className="tok-str">'Adobe Commerce'</span>, <span className="tok-str">'PHP'</span>],{'\n'}
-                {'  '}<span className="tok-key">stack</span>: [<span className="tok-str">'Laravel'</span>, <span className="tok-str">'React'</span>, <span className="tok-str">'Node'</span>],{'\n'}
-                {'  '}<span className="tok-key">focus</span>: <span className="tok-str">'Warehouse Automation'</span>,{'\n'}
-                {'  '}<span className="tok-key">experience</span>: <span className="tok-str">'6+ years'</span>,{'\n'}
-                {'  '}<span className="tok-key">available</span>: <span className="tok-bool">true</span>{'\n'}
-                {'}'};
-              </code>
-            </pre>
-          </div>
-        </motion.div>
       </div>
     </section>
   );

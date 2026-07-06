@@ -2,7 +2,7 @@ export const profile = {
   name: 'Muhammad Tufail',
   role: 'Senior Magento / Adobe Commerce Developer',
   tagline:
-    'Enterprise-level engineer specializing in Adobe Commerce, warehouse automation, and scalable ecosystem engineering.',
+    'Software engineer specializing in Adobe Commerce, warehouse automation, and scalable ecosystem engineering.',
   availability: 'Open to new opportunities'
 };
 
@@ -80,7 +80,7 @@ export const projects = [
     category: 'magento',
     featured: true,
     description:
-      'Enterprise import/export module with prompt-based AI image generation, validation handling, rollback protection, and exception management workflows.',
+      'Import/export module with prompt-based AI image generation, validation handling, rollback protection, and exception management workflows.',
     highlights: [
       'AI-generated product imagery from admin-defined prompts',
       'Rollback protection guards catalogs against bad imports',
@@ -99,7 +99,7 @@ export const projects = [
     highlights: [
       'Unified authentication across storefront and admin',
       'GraphQL-driven token exchange with centralized access control',
-      'Hardened session handling for enterprise security requirements'
+      'Hardened session handling for strict security requirements'
     ],
     tech: ['Magento 2', 'GraphQL', 'Authentication', 'Security'],
     image: 'covers/sso.svg',
@@ -135,7 +135,7 @@ export const projects = [
     title: 'Shop Display Order & Draft System',
     category: 'warehouse',
     description:
-      'Enterprise shop display order system with version control, location-based drafts, dispatch workflows, cron automation, and handheld SKU scanning.',
+      'Shop display order system with version control, location-based drafts, dispatch workflows, cron automation, and handheld SKU scanning.',
     highlights: [
       'Versioned drafts per retail location',
       'Handheld SKU scanning integrated with dispatch workflows'
@@ -223,10 +223,10 @@ export const projects = [
     icon: '⏱️'
   },
   {
-    title: 'Enterprise MERN eCommerce Platform',
+    title: 'MERN eCommerce Platform',
     category: 'fullstack',
     description:
-      'Scalable MERN stack platform with enterprise dashboards, APIs, role-based access, and advanced backend architecture.',
+      'Scalable MERN stack platform with admin dashboards, APIs, role-based access, and advanced backend architecture.',
     highlights: [
       'Role-based dashboards for multi-team operations',
       'API-first architecture ready for headless clients'
@@ -311,7 +311,7 @@ export const skillGroups = [
     skills: ['MySQL', 'MongoDB', 'SQL Server', 'Elasticsearch', 'Docker', 'Nginx', 'Varnish Cache', 'Linux', 'Git & GitHub']
   },
   {
-    title: 'Enterprise & Operations',
+    title: 'Operations & Integrations',
     icon: '🏭',
     skills: ['Warehouse Management', 'Shipping APIs (DHL, Royal Mail, APC)', 'ERP Integrations', 'SSO & Authentication', 'Cron Automation', 'Google Analytics']
   },
@@ -383,7 +383,7 @@ export const certifications = [
 export const stats = [
   { value: '5+', label: 'Years in Magento' },
   { value: '6+', label: 'Years in PHP / Laravel' },
-  { value: '40+', label: 'Enterprise Projects' },
+  { value: '40+', label: 'Projects Delivered' },
   { value: '15+', label: 'Custom Magento Modules' }
 ];
 
@@ -391,7 +391,7 @@ export const services = [
   {
     icon: '🛒',
     title: 'Magento 2 Development',
-    desc: 'Custom Magento modules, Adobe Commerce systems, GraphQL APIs, and scalable enterprise solutions.'
+    desc: 'Custom Magento modules, Adobe Commerce systems, GraphQL APIs, and scalable eCommerce solutions.'
   },
   {
     icon: '🚚',
@@ -401,7 +401,7 @@ export const services = [
   {
     icon: '🔐',
     title: 'SSO & Security Systems',
-    desc: 'Frontend/backend authentication, SSO integrations, API security, and enterprise access management.'
+    desc: 'Frontend/backend authentication, SSO integrations, API security, and centralized access management.'
   },
   {
     icon: '💻',

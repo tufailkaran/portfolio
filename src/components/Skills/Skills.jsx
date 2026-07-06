@@ -9,7 +9,7 @@ const Skills = () => {
         <span className="section-subtitle">Expertise</span>
         <h2 className="section-title">Technical Proficiency</h2>
         <p className="section-intro">
-          A full-stack toolkit built over six years of enterprise eCommerce and
+          A full-stack toolkit built over six years of eCommerce and
           platform engineering.
         </p>
 

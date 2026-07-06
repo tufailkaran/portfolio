@@ -20,7 +20,7 @@ const Projects = () => {
     <section className="projects-section" id="projects">
       <div className="container">
         <span className="section-subtitle">Portfolio</span>
-        <h2 className="section-title">Enterprise Case Studies</h2>
+        <h2 className="section-title">Case Studies</h2>
         <p className="section-intro">
           A selection of production systems built across eCommerce, warehouse
           operations, and full-stack platforms.

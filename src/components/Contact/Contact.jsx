@@ -39,7 +39,7 @@ const Contact = () => {
         >
           <h3 className="cta-title">Ready to scale your next project?</h3>
           <p className="cta-text">
-            Specialized in enterprise Magento systems, warehouse automation, and
+            Specialized in Magento systems, warehouse automation, and
             high-performance backend architecture. Available for full-time roles,
             contracts, and consulting.
           </p>
